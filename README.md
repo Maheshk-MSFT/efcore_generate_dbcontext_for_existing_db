@@ -2,6 +2,9 @@
 
 Scaffold-DbContext "Data Source=[DBSERVERNAME];initial catalog=[DATABASENAME];Integrated Security=True;ConnectRetryCount=0" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context myDbcontext  -DataAnnotations
 
+![11](https://user-images.githubusercontent.com/61469290/101380364-647f7500-38db-11eb-85bd-6adda17bb0e4.PNG)
+
+
 https://docs.microsoft.com/en-us/ef/core/cli/powershell#scaffold-dbcontext
 src: https://www.youtube.com/watch?v=-sftSA9_X-k&list=PLdo4fOcmZ0oX7uTkjYwvCJDG2qhcSzwZ6&index=2 
 

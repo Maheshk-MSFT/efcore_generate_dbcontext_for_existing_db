@@ -1,32 +1,9 @@
 # efcore_generate_dbcontext_from_existing_db
 
-For VS 2019, Package manager commands to generate the model class and context: 
-==============================================================================
-PM> Add-Migrate InitialCreate (generate code) 
+Scaffold-DbContext "Data Source=[DBSERVERNAME];initial catalog=[DATABASENAME];Integrated Security=True;ConnectRetryCount=0" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context myDbcontext  -DataAnnotations
 
-PM> Update-Database (Creates the db tables) 
-
-PM> Add-Migration AddEmail (for code update to DB change) 
-
-PM> Update-Database
-
-
-src: https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs 
-
-
----
-For VS Code
-==============
-dotnet ef migrations add InitialCreate
-
-dotnet ef database update
-
-dotnet ef migrations add AddBlogCreatedTimestamp
-
-dotnet ef database update
-
-
-src: https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli 
+https://docs.microsoft.com/en-us/ef/core/cli/powershell#scaffold-dbcontext
+src: https://www.youtube.com/watch?v=-sftSA9_X-k&list=PLdo4fOcmZ0oX7uTkjYwvCJDG2qhcSzwZ6&index=2 
 
 
 ![mk](https://user-images.githubusercontent.com/61469290/101345809-a1347780-38ad-11eb-88d3-588f9ee4820b.PNG)
